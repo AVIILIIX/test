@@ -1,0 +1,61 @@
+---
+Host:
+  Url: https://localhost:5002/
+  Allowed: "*"
+Authentication:
+  Facebook:
+    AppId: ''
+    AppSecret: ''
+DataBase:
+  ConnectionString: 'Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security'
+    Info 'False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection'
+    Timeout '30'
+  SchemaName: AV
+JWT:
+  Access:
+    Key: SOME_RANDOM_KEY_DO_NOT_SHARE
+    Issuer: http://localhost
+    ExpireSeconds: 2592000
+  Session:
+    Host: Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security Info=False;User
+      ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection
+      Timeout=30;
+    Instance: UserSessions
+    Scheme: dbo
+    ExpireSeconds: 2592000
+  Refresh:
+    Host: Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security Info=False;User
+      ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection
+      Timeout=30;
+    Instance: UserRefresh
+    Scheme: dbo
+    ExpireSeconds: 2592000
+SendGrid:
+  Key: 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
+  Email: antonionava.vargas@icloud.com
+  UserName: SIMRIC
+  ForgotHost: https://localhost:5002/restablecer-contrasena?token=
+  Confirmation:
+    Template: mail/confirmation.html
+    Subject: "[SIMRIC] - Link de confirmación de correo"
+    Title: Bienvenido.
+    Description: ''
+    Button: Confirma tu email
+Twilio:
+  Account: AC701d9d70098332b752138bec6656e0f7
+  Token: ef73221e0557d2a62acd75a8ae91312c
+  PhoneNumber: "+14324233400"
+Logging:
+  LogLevel:
+    Default: Information
+    System: Information
+    Microsoft: Information
+StorageAccount:
+  Url: ''
+  Container: ''
+  ConnectionString: ''
+  UserImageDir: userimage
+  BarcodeDir: barcode
+  StoresImageDir: storeimage
+ElasticConfiguration:
+  Uri: http://localhost:9200/
