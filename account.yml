@@ -7,7 +7,7 @@ Authentication:
     AppId: ''
     AppSecret: ''
 DataBase:
-  ConnectionString: Server=tcp:localhos,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
+  ConnectionString: Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
   SchemaName: AV
 JWT:
   Access:
@@ -15,12 +15,12 @@ JWT:
     Issuer: http://localhost
     ExpireSeconds: 2592000
   Session:
-    Host: Server=tcp:localhos,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
+    Host: Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
     Instance: UserSessions
     Scheme: dbo
     ExpireSeconds: 2592000
   Refresh:
-    Host: Server=tcp:localhos,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
+    Host: Server=tcp:localhost,1433;Initial Catalog=AV;Persist Security Info=False;User ID=sa;Password=9gXa-&)f;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;
     Instance: UserRefresh
     Scheme: dbo
     ExpireSeconds: 2592000
